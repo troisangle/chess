@@ -1,2 +1,2 @@
-public bishop{
+public  class bishop{
 }
