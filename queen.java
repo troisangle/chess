@@ -1,2 +1,2 @@
-public queen{
+public class  queen{
 }
