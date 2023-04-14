@@ -1,2 +1,2 @@
-public pawn{
+public  class pawn{
 }
