@@ -1,2 +1,2 @@
-public knight{
+public class knight{
 }
