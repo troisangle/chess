@@ -1,2 +1,2 @@
-public rook{
+public  class rook{
 }
