@@ -13,4 +13,7 @@ public class board{
         b[nx][ny]= b[ox][oy];
         b[ox][oy] = null;
     }
+    public void add(piece z){
+        b[z.getX()][z.getY()]=z;
+    }
 }

@@ -36,4 +36,9 @@ public class player {
             pieces.add(new queen(4, 8));  
     }
     }
+    public void setB(board b){
+    for(piece x: pieces){
+        b.add(x);
+    }
+    }
 }

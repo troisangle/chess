@@ -5,6 +5,13 @@ public class piece {
     this.x=x;
     this.y=y;
     }
+    public int getX(){
+        return x;
+    }
+
+    public int getY(){
+        return y;
+    }
     public String yCord(int x){
         if(x==1){
             return "a";
