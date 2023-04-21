@@ -1,2 +1,2 @@
-public  class pawn{
+public  class pawn extends piece{
 }

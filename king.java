@@ -1,2 +1,2 @@
-public class king{
+public class king  extends piece{
 }

@@ -1,2 +1,2 @@
-public  class rook{
+public  class rook extends piece{
 }

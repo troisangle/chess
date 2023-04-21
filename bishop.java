@@ -1,2 +1,2 @@
-public  class bishop{
+public  class bishop extends piece{
 }

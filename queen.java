@@ -1,2 +1,2 @@
-public class  queen{
+public class  queen extends piece{
 }
