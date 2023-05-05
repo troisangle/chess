@@ -1,4 +1,4 @@
-public class piece {
+public abstract class piece {
     private int x;
     private int y;
     public piece( int x, int y){
@@ -39,4 +39,9 @@ public class piece {
         }
       return "error" ;
     }
+    public String getPiece(){
+     return "x";
+    };
+
+    
 }

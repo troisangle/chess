@@ -17,6 +17,12 @@ import javax.imageio.ImageIO;
 
 public class board extends Canvas{
 private BufferedImage game;
+private BufferedImage rook;
+private BufferedImage pawn;
+private BufferedImage knight;
+private BufferedImage bishop;
+private BufferedImage queen;
+private BufferedImage king;
 
 
     piece[][] b;
@@ -59,6 +65,12 @@ private BufferedImage game;
 		try
      {
 	game = ImageIO.read(getClass().getResourceAsStream("/board.png"));
+    pawn = ImageIO.read(getClass().getResourceAsStream("/pawn.png"));
+    rook = ImageIO.read(getClass().getResourceAsStream("/rook.png"));
+    knight = ImageIO.read(getClass().getResourceAsStream("/knight.png"));
+    bishop = ImageIO.read(getClass().getResourceAsStream("/bishop.png"));
+    queen = ImageIO.read(getClass().getResourceAsStream("/queen.png"));
+    king = ImageIO.read(getClass().getResourceAsStream("/king.png"));
 
      }
     catch(Exception e)
@@ -66,10 +78,40 @@ private BufferedImage game;
 	
            }
         
-		twoDGraph.setColor(Color.BLACK);
-		twoDGraph.drawString("StarFighter ", 25, 50 );
-		twoDGraph.setColor(Color.BLACK);
+		twoDGraph.setColor(Color.WHITE);
+
 		twoDGraph.fillRect(0,0,2000,1000);
+     
         twoDGraph.drawImage(game, 10,10,800,800, null);
+        int x = 50;
+        int y = 50;
+        for(piece[] a: b){
+            for(piece z :a){
+                if(z!= null&&z.getPiece().equals("r")){
+                twoDGraph.drawImage(rook, x,y,75,75, null);
+                }
+                if(z!= null&&z.getPiece().equals("p")){
+                    twoDGraph.drawImage(pawn, x,y,75,75, null);
+                    }
+
+                if(z!= null&&z.getPiece().equals("b")){
+                        twoDGraph.drawImage(bishop, x,y,75,75, null);
+                        }
+
+                        if(z!= null&&z.getPiece().equals("q")){
+                            twoDGraph.drawImage(queen, x,y,75,75, null);
+                            }
+                            if(z!= null&&z.getPiece().equals("k")){
+                                twoDGraph.drawImage(king, x,y,75,75, null);
+                                }
+                                if(z!= null&&z.getPiece().equals("kn")){
+                                    twoDGraph.drawImage(knight, x,y,75,75, null);
+                                    }
+                x+=91;
+            }
+            y+=91;
+            x=50;
+        }
+       
     }
 }
